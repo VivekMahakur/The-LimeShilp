@@ -40,7 +40,7 @@ export default function WhyLime() {
       <section className="why-lime-before-after">
         <div className="why-lime-image-wrapper">
           <img
-            src="/before-after-lime-finish.png"
+            src="/assets/b&a.png"
             alt="Before and after of lime finish wall"
           />
         </div>
