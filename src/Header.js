@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import logoImg from "./logo.png"; // Update this path for your logo
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +14,9 @@ export default function Header() {
 
   return (
     <header className="header-container">
-      <div className="logo">The LimeShilp</div>
+      <img src={logoImg} alt="The LimeShilp Logo" className="logo-image" />
+
+      <div className="logo-text">The LimeShilp</div>
 
       <nav className={`nav-links ${menuOpen ? "open" : ""}`} aria-label="Primary navigation">
         <Link to="/" onClick={handleLinkClick}>Home</Link>
