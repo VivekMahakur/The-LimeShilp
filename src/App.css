@@ -1,38 +1,246 @@
-.App {
+/* Global container */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #f2fcf4;
+  padding: 5rem 1rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #3b4252;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-paragraph {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+.hero-cta-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-button-primary {
+  display: inline-block;
+  background: #17843e;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-button-secondary {
+  display: inline-block;
+  background: #edfdf5;
+  color: #17843e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #d1e7dd;
+}
+
+.hero-image-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.why-title {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #3b4252;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background: #f2fcf4;
+  border: 1px solid #e6f2ea;
+  border-radius: 12px;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.card h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.card p {
+  margin-top: 0.75rem;
+  color: #434a5e;
+}
+
+/* Serving India Section */
+.serving-india-section {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.serving-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #f2fcf4;
+  border: 1px solid #e6f2ea;
+  border-radius: 12px;
+  padding: 2rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.serving-text h3 {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.serving-text p {
+  margin-top: 1rem;
+  color: #434a5e;
+  font-size: 1rem;
+}
+
+.serving-text a {
+  margin-top: 1.3rem;
+  display: inline-block;
+  color: #17843e;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.serving-image-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.serving-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Media Queries */
+
+/* Below 900px width (tablet/smaller desktop) */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-paragraph {
+    font-size: 1.15rem;
+  }
+  .hero-cta-container {
+    justify-content: center;
+  }
+  .serving-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-choose-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+
+  html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  }
+  .hero-section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-paragraph {
+    font-size: 1rem;
+  }
+  .hero-cta-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .cta-button-primary,
+  .cta-button-secondary {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .why-title {
+    font-size: 1.75rem;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .serving-india-section {
+    padding: 2rem 1rem;
+  }
+  .serving-text h3 {
+    font-size: 1.25rem;
+  }
+  .serving-text p {
+    font-size: 0.95rem;
+  }
+  .serving-text a {
+    font-size: 0.95rem;
   }
 }

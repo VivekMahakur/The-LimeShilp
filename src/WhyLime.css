@@ -1,0 +1,139 @@
+.why-lime-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* Intro */
+.why-lime-intro {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.why-lime-title {
+  font-family: serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.why-lime-desc {
+  font-size: 1.2rem;
+  max-width: 950px;
+  line-height: 1.5;
+}
+
+/* Benefits grid */
+.why-lime-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.why-lime-card {
+  background: #f3fdf7;
+  border-radius: 10px;
+  padding: 1.8rem 2rem;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 8px #d9f0dc;
+}
+
+.why-lime-card h2 {
+  font-family: serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.why-lime-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Span two columns */
+.span-two {
+  grid-column: span 2;
+}
+
+/* Before/After Section */
+.why-lime-before-after {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.why-lime-image-wrapper {
+  flex: 1 1 440px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 14px rgb(0 0 0 / 0.1);
+}
+
+.why-lime-image-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.why-lime-text {
+  flex: 1 1 340px;
+}
+
+.why-lime-text h2 {
+  font-family: serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.why-lime-text p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+
+/* Tablets and smaller desktops */
+@media (max-width: 900px) {
+  .why-lime-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .span-two {
+    grid-column: span 1;
+  }
+  
+  .why-lime-before-after {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .why-lime-image-wrapper,
+  .why-lime-text {
+    flex: 1 1 100%;
+  }
+
+  .why-lime-title {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .why-lime-main {
+    padding: 1rem;
+  }
+
+  .why-lime-desc,
+  .why-lime-text p {
+    font-size: 1rem;
+  }
+
+  .why-lime-text h2 {
+    font-size: 1.5rem;
+  }
+}

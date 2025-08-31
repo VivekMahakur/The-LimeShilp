@@ -1,0 +1,44 @@
+.about-story-row {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.about-col {
+  flex: 1 1 0px;
+  min-width: 280px;
+  max-width: 480px;
+}
+
+.about-expertise-card {
+  background: #f2fcf4;
+  border: 1px solid #e6f2ea;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  font-size: 1.15rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  max-width: 1100px;
+  font-family: inherit;
+  color: #2d3748;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .about-story-row {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .about-col {
+    max-width: 100%;
+  }
+  .about-expertise-card {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+}
