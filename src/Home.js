@@ -21,14 +21,14 @@ export default function Home() {
                 <a href="/products" className="cta-button-primary">
                   Explore Our Products
                 </a>
-                <a href="/portfolio" className="cta-button-secondary">
+                <a href="/work" className="cta-button-secondary">
                   See Our Work
                 </a>
               </div>
             </div>
             <div className="hero-image-wrapper">
               <img
-                src="/lime-plaster-wall-texture.png"
+                src="/assets/hero1.jpg"
                 alt="Lime plaster wall texture"
               />
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <div className="serving-image-wrapper">
             <img
-              src="/artisan-applying-lime-finish.png"
+              src="/assets/artists.jpg"
               alt="Artisan applying lime finish"
             />
           </div>
